@@ -29,4 +29,7 @@ Route::get('/', function () {
   return view('ajouter');
 });
 
+Route::get('/', function () {
+  return view('Dashboard-admin');
+
  

@@ -54,39 +54,20 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td class="py-1">
-                                            <img src="../../assets/images/faces/face1.jpg" alt="image" />
-                                        </td>
-                                        <td>Herman Beck</td>
-                                        <td>Médecin</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Voir plus</button>
-                                            <button type="button" class="btn btn-warning">Modifier</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-1">
-                                            <img src="../../assets/images/faces/face2.jpg" alt="image" />
-                                        </td>
-                                        <td>Messiah Horn</td>
-                                        <td>Infirmier</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Voir plus</button>
-                                            <button type="button" class="btn btn-warning">Modifier</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-1">
-                                            <img src="../../assets/images/faces/face3.jpg" alt="image" />
-                                        </td>
-                                        <td>Elijah West</td>
-                                        <td>Administrateur</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Voir plus</button>
-                                            <button type="button" class="btn btn-warning">Modifier</button>
-                                        </td>
-                                    </tr>
+                                    @for ($i =0 ; $i <=5 ; $i++)
+                                        <tr>
+                                            <td class="py-1">
+                                                <img src="{{ asset('patient.png') }}" alt="image" />
+                                            </td>
+                                            <td>Herman Beck</td>
+                                            <td>Médecin</td>
+                                            <td>
+                                                <button type="button" class="btn btn-success">Voir plus</button>
+                                                <button type="button" class="btn btn-warning">Modifier</button>
+                                            </td>
+                                        </tr>
+                                    @endfor
+
                                     <!-- Ajoutez d'autres lignes de tableau ici selon vos besoins -->
                                 </tbody>
                             </table>

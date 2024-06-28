@@ -77,7 +77,7 @@
             <input type="text" id="nom" name="nom" required>
 
             <label for="nom">Prénom</label>
-            <input type="text" id="prénom" name="prénom" required>
+            <input type="text" id="prénom" name="prenom" required>
 
             <label for="nom">Adresse</label>
             <input type="text" id="Adresse" name="Adresse" required>

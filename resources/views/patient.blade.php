@@ -48,69 +48,18 @@
                     </tr>
                   </thead>
                   <tbody>
+                    @for ( $i=0 ;  $i<=10 ; $i++)
                     <tr>
-                      <td class="py-1"><img src="../../assets/images/faces-clipart/pic-1.png" alt="image" /></td>
-                      <td> Beck </td>
-                      <td> Herman </td>
-                      <td>
-                        <button type="button" class="btn btn-info">Voir plus</button>
-                        <button type="button" class="btn btn-warning">Modifier</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="py-1"><img src="../../assets/images/faces-clipart/pic-2.png" alt="image" /></td>
-                      <td> Adam </td>
-                      <td> Messsy </td>
-                      <td>
-                        <button type="button" class="btn btn-info">Voir plus</button>
-                        <button type="button" class="btn btn-warning">Modifier</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="py-1"><img src="../../assets/images/faces-clipart/pic-3.png" alt="image" /></td>
-                      <td> Richards </td>
-                      <td> John </td>
-                      <td>
-                        <button type="button" class="btn btn-info">Voir plus</button>
-                        <button type="button" class="btn btn-warning">Modifier</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="py-1"><img src="../../assets/images/faces-clipart/pic-4.png" alt="image" /></td>
-                      <td> Meggik </td>
-                      <td> Peter </td>
-                      <td>
-                        <button type="button" class="btn btn-info">Voir plus</button>
-                        <button type="button" class="btn btn-warning">Modifier</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="py-1"><img src="../../assets/images/faces-clipart/pic-5.png" alt="image" /></td>
-                      <td> Edward </td>
-                      <td> </td>
-                      <td>
-                        <button type="button" class="btn btn-info">Voir plus</button>
-                        <button type="button" class="btn btn-warning">Modifier</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="py-1"><img src="../../assets/images/faces-clipart/pic-6.png" alt="image" /></td>
-                      <td> Doe </td>
-                      <td> John </td>
-                      <td>
-                        <button type="button" class="btn btn-info">Voir plus</button>
-                        <button type="button" class="btn btn-warning">Modifier</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="py-1"><img src="../../assets/images/faces-clipart/pic-7.png" alt="image" /></td>
-                      <td> Tom </td>
-                      <td> Henry </td>
-                      <td>
-                        <button type="button" class="btn btn-info">Voir plus</button>
-                        <button type="button" class="btn btn-warning">Modifier</button>
-                      </td>
-                    </tr>
+                        <td class="py-1"><img src="{{ asset('patient.png') }}" alt="image" /></td>
+                        <td> Beck </td>
+                        <td> Herman </td>
+                        <td>
+                          <button type="button" class="btn btn-info">Voir plus</button>
+                          <button type="button" class="btn btn-warning">Modifier</button>
+                        </td>
+                      </tr>
+                    @endfor
+
                   </tbody>
                 </table>
               </div>

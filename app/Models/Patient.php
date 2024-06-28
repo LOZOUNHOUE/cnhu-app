@@ -9,10 +9,5 @@ class Patient extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'numero_dossier',
-        'date',
-        'heure_arrivee',
-        // Ajoutez tous les autres champs ici
-    ];
+    protected $guarded = [];
 }
